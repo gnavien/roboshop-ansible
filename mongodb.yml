@@ -1,4 +1,5 @@
 - name: Setup MongoDB
+  become: yes
   hosts: all
   tasks:
     - name: Copy MongoDB Repo file
