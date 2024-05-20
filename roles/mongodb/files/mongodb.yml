@@ -1,7 +1,0 @@
-- name: Setup MongoDB
-  become: yes
-  hosts: all
-  roles:
-    - mongodb
-
-
