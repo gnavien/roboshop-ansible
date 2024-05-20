@@ -7,7 +7,7 @@
     state: installed
 
 - name: App Pre-requisites
-  ansible.builtin.inport_tasks:
+  ansible.builtin.import_tasks:
     file: app_presetup.yml
 
 - name: Load NodeJS Dependencies
