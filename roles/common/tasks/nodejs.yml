@@ -16,7 +16,7 @@
     chdir: /app
 
 - name: systemd setup
-  ansible.builtin.inport_tasks:
+  ansible.builtin.import_tasks:
     file: systemd_setup.yml
 
 
