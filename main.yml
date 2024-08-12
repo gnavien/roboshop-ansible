@@ -2,4 +2,7 @@
   hosts: all
   become: yes
   roles:
-    - "{{ role_name }}"
+    - "{{ role_name }}"  #Double quotes is needed when the value is starting with variable.
+
+
+# ansible-playbook -i frontend-dev.navien.site, main.yml -e role_name=frontend -e ansible_user=centos -e ansible_password=DevOps321
