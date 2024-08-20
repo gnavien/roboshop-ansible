@@ -19,8 +19,8 @@
    args:
       chdir: /app
 
-- name: Systemd setup
-  ansible_builtin.import_tasks:
+-  name: Systemd setup
+   ansible_builtin.import_tasks:
      file: systemd_setup.yml
 
 
