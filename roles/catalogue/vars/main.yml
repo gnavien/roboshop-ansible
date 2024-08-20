@@ -1,1 +1,4 @@
 component: catalogue
+
+load_schema: true    # Declaring a variable (In Catalogue load schema setup should be coming before starting of the service, for this we are adding a variable
+

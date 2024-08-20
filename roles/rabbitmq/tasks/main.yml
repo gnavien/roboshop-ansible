@@ -1,5 +1,5 @@
 - name: Configure Erlang repos
-  ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh
+  ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/{{ item }} | bash
   loop:
     - erlang/script.rpm.sh
     - rabbitmq-server/script.rpm.sh
@@ -7,6 +7,7 @@
 #- name: Configure RabbitMQ Repos
 #  ansible.builtin.shell: curl -s https://packagecloud.io/install/repositories/rabbitmq/rabbitmq-server/script.rpm.sh
 # select ctrl+/ to disable
+
 - name: Install RabbitMQ Server
   ansible.builtin.yum:
       name: rabbitmq-server
