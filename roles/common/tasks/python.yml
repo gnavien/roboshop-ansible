@@ -6,7 +6,11 @@
       - python3-devel
     state: installed
 
-- name: App Pre-requisites
+#- name: App Pre-requisites
+#  ansible.builtin.import_tasks:
+#    file: app_presetup.yml
+
+- name: App Pre-Requirements
   ansible.builtin.import_tasks:
     file: app_presetup.yml
 
