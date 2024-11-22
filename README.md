@@ -6,3 +6,5 @@ ansible-pull -i localhost, -U https://github.com/gnavien/... frontentend.yml Thi
 # for component in frontend mongodb mysql redis rabbitmq catalogue user cart shipping payment ; do 
 # ansible-playbook main.yml -e ansible_user=centos -e ansible_password=DevOps321 -e
 # role_name=${component} -i ${component}-dev.navien.site,; done
+check
+
