@@ -8,3 +8,4 @@ ansible-pull -i localhost, -U https://github.com/gnavien/... frontentend.yml Thi
 # role_name=${component} -i ${component}-dev.navien.site,; done
 check1
 
+# check
